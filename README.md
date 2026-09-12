@@ -130,8 +130,7 @@ Five apps. One cockpit. Each feature is a standalone codebase, wired into the da
 
 **Folder:** [`Webg/WebGPU-Studio`](./Webg/WebGPU-Studio) · **Dev:** `http://localhost:3020`
 
-> **Demo video:**  
-> `https://youtu.be/________`
+<img width="1710" height="1107" alt="Image" src="https://github.com/user-attachments/assets/d8f503ff-9f2a-43c2-9619-1ec563f3d00e" />
 
 ---
 
