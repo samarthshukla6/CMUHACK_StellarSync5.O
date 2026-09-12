@@ -1,6 +1,6 @@
 <div align="center">
 
-# ATLAS
+# TravelX(AI)
 ### StellarSync 5.0 · HackCMU
 
 **Talk. Fly. Drop the bags. Find your way. Run AI on-device.**
@@ -24,11 +24,11 @@ Voice-first travel OS — plan a trip by speaking, scrape the world onto a 3D gl
 
 Travel still assumes you **book a room** just to park a suitcase, **type forms** to plan a day, and **ask the front desk** the second GPS dies indoors.
 
-Atlas flips that.
+TravelX(AI) flips that.
 
-| Pain | Atlas move |
+| Pain | TravelX(AI) move |
 | --- | --- |
-| Planning is a spreadsheet | Talk to Atlas. Gemini writes the itinerary. |
+| Planning is a spreadsheet | Talk to TravelX. Gemini writes the itinerary. |
 | “What should I even see?” | Globe flies there. Gemini scrapes the famous spots. |
 | Hotel booked only for luggage | Voice + photo bag-drop at a nearby shop. Roam hotel-free. |
 | GPS dies in hospitals / campuses | Record a hallway once. Camera + compass steers the next person. |
@@ -40,7 +40,7 @@ Atlas flips that.
 
 ```
                     ┌─────────────────────────────┐
-                    │     Atlas Dashboard :3000   │
+                    │   TravelX(AI) Dash :3000    │
                     │   ElevenLabs voice · Gemini │
                     │        itinerary / PDF      │
                     └──────────────┬──────────────┘
@@ -62,7 +62,7 @@ Five apps. One cockpit. Each feature is a standalone codebase, wired into the da
 ## Features
 
 ### 1 · Voice trip planner
-**Atlas talks. You talk back. The plan writes itself.**
+**TravelX talks. You talk back. The plan writes itself.**
 
 - Real-time conversational AI via **ElevenLabs**
 - Traveler avatars, live transcript, call-to-itinerary
@@ -143,7 +143,7 @@ Built at **HackCMU** by **StellarSync 5.0**.
 
 | | Name | Role |
 | :---: | --- | --- |
-| ◆ | _add name_ | Voice / Atlas dashboard |
+| ◆ | _add name_ | Voice / TravelX dashboard |
 | ◆ | _add name_ | 3D globe + Gemini scrape |
 | ◆ | _add name_ | Luggage Mate / bag-drop |
 | ◆ | _add name_ | NoGPS indoor wayfinding |
@@ -186,7 +186,7 @@ cd CMUHACK_StellarSync5.O
 
 | App | Start | URL |
 | --- | --- | --- |
-| Atlas dashboard | `cd HealthX_Dashboard && npm i && npm run dev` | http://localhost:3000 |
+| TravelX(AI) dashboard | `cd HealthX_Dashboard && npm i && npm run dev` | http://localhost:3000 |
 | Globe | `cd "3d globe render travel" && npm i && npm run dev` | http://localhost:3010 |
 | Luggage Mate | `cd luggage-mate && npm i && npm start` | http://127.0.0.1:8094 |
 | NoGPS | `cd NoGPS && ./start.sh` | http://127.0.0.1:8080/dashboard.html |
@@ -209,7 +209,7 @@ NEXT_PUBLIC_WEBGPU_APP_URL=http://localhost:3020
 
 ```
 CMUHACK_StellarSync5.O/
-├── HealthX_Dashboard/          # Atlas voice + itinerary cockpit
+├── HealthX_Dashboard/          # TravelX(AI) voice + itinerary cockpit
 ├── luggage-mate/               # bag-drop, no hotel
 ├── NoGPS/                      # indoor wayfinding
 ├── 3d globe render travel/     # globe + Gemini scrape
@@ -220,7 +220,7 @@ CMUHACK_StellarSync5.O/
 
 <div align="center">
 
-**StellarSync 5.0** — HackCMU
+**TravelX(AI)** · StellarSync 5.0 — HackCMU
 
 *Travel light. Talk first. Never lose the hallway.*
 
