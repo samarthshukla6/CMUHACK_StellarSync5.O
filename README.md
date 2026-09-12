@@ -86,8 +86,7 @@ Five apps. One cockpit. Each feature is a standalone codebase, wired into the da
 
 **Folder:** [`luggage-mate`](./luggage-mate) · **Dev:** `http://127.0.0.1:8094`
 
-> **Demo video:**  
-> `https://youtu.be/________`
+<img width="1710" height="1107" alt="Image" src="https://github.com/user-attachments/assets/06f3c608-f6f5-4bc1-a97d-8a078f1e3b34" />
 
 ---
 
