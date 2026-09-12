@@ -1,0 +1,24 @@
+{
+  "decisions": [
+    {
+      "itemId": "item_001",
+      "include": true,
+      "kind": "bag"
+    },
+    {
+      "itemId": "item_002",
+      "include": false
+    },
+    {
+      "itemId": "item_003",
+      "include": false
+    }
+  ],
+  "manualItems": [],
+  "attestations": {
+    "inventoryConfirmed": true,
+    "belongsToTraveler": true,
+    "onlyListedItemsConsidered": true,
+    "contentsDeclaration": "unlisted_contents_excluded"
+  }
+}

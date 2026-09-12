@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {validateBooking} from '../server/booking.js';
+import {locations} from '../server/catalog.js';
+const input=()=>({inventory:'Laptop and clothes',bags:2,value:850,protection:2,trip:{start:'Downtown',visit:'Strip District',end:'Station',drop:'2026-09-12T14:00:00.000Z',pickup:'2026-09-12T22:00:00.000Z'}});
+test('daily cap applies per bag; protection is added once',()=>{assert.equal(validateBooking(input(),locations[0]).pricing.totalCents,900)});
+test('partial day beyond 24 hours bills hourly up to next cap',()=>{const body=input();body.trip.pickup='2026-09-13T15:00:00.000Z';assert.equal(validateBooking(body,locations[0]).pricing.storageCents,750)});
+test('client price and identity cannot set stored booking fields',()=>{const result=validateBooking({...input(),userId:'other',totalCents:0,status:'paid'},locations[0]);assert.equal(result.userId,undefined);assert.equal(result.status,'simulated_confirmed');assert.equal(result.pricing.totalCents,900)});
+test('rejects invalid dates, quantities, values, and protection',()=>{for(const override of [{bags:0},{bags:1.5},{value:-1},{protection:3},{inventory:''},{trip:{...input().trip,pickup:'2026-09-11T22:00:00.000Z'}},{trip:{...input().trip,pickup:'bad'}}])assert.throws(()=>validateBooking({...input(),...override},locations[0]));});
+test('unavailable business is rejected',()=>assert.throws(()=>validateBooking(input(),null)));

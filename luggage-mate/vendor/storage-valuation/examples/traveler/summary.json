@@ -1,0 +1,38 @@
+[
+  {
+    "scenario": "bag-only",
+    "status": "demo_quote_ready",
+    "estimatedValue": 90,
+    "coverageLimit": 100,
+    "totalPremium": 1.49,
+    "blockingReasons": []
+  },
+  {
+    "scenario": "bag-and-declared-contents",
+    "status": "demo_quote_ready",
+    "estimatedValue": 190,
+    "coverageLimit": 200,
+    "totalPremium": 1.49,
+    "blockingReasons": []
+  },
+  {
+    "scenario": "unverified-laptop",
+    "status": "requires_review",
+    "estimatedValue": 990,
+    "coverageLimit": 100,
+    "totalPremium": null,
+    "blockingReasons": [
+      "items_require_verification"
+    ]
+  },
+  {
+    "scenario": "unattended-storage",
+    "status": "ineligible",
+    "estimatedValue": 90,
+    "coverageLimit": 100,
+    "totalPremium": null,
+    "blockingReasons": [
+      "unattended_storage_ineligible"
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "name": "PlayStation 5",
+      "category": "electronics",
+      "brand": "Sony",
+      "model": "PlayStation 5 Slim",
+      "quantity": 1,
+      "condition": "good",
+      "confidence": 0.94,
+      "replacementValue": {
+        "low": 380,
+        "expected": 450,
+        "high": 500
+      },
+      "valuationBasis": "probable_model",
+      "visibleEvidence": [
+        "white PS5-style side panels visible"
+      ],
+      "suggestedNeedsReview": false,
+      "suggestedReviewReason": null
+    }
+  ]
+}

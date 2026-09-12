@@ -1,0 +1,52 @@
+{
+  "name": "storage-valuation",
+  "version": "1.0.0",
+  "description": "Standalone storage inventory valuation and demo-only insurance quote",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.check.json",
+    "test": "vitest run",
+    "analyze": "node --import tsx src/cli/analyze.ts",
+    "start": "node --import tsx src/server/start.ts",
+    "start:built": "node dist/server/start.js",
+    "examples": "node --import tsx examples/runMocked.ts",
+    "traveler": "node --import tsx src/cli/traveler.ts",
+    "examples:traveler": "node --import tsx examples/runTraveler.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^2.22.0",
+    "@hono/node-server": "^2.1.1",
+    "dotenv": "^17.4.2",
+    "hono": "^4.13.7",
+    "sharp": "^0.35.4",
+    "zod": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "vitest": "4.1.11"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./server": "./dist/server/app.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "TRAVELER_FLOW.md",
+    "LEGACY.md"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "overrides": {
+    "vite": "^7.3.0"
+  }
+}

@@ -1,0 +1,36 @@
+@font-face{font-family:Aktiv;src:url('/assets/AktivGrotesk-Regular.otf')}@font-face{font-family:Aktiv;src:url('/assets/AktivGrotesk-Bold.otf');font-weight:700}@font-face{font-family:Mont;src:url('/assets/Mont-Bold.ttf');font-weight:700}*{box-sizing:border-box}body{margin:0;background:#fff;color:#292929;font:16px Aktiv,Arial,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer;border:1px solid #eaeaea;background:white;color:#292929;border-radius:9px;padding:12px 17px}button:hover{border-color:#3a51f9}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #3a51f9;outline-offset:3px}button:disabled{cursor:wait;opacity:.65}[hidden]{display:none!important}
+h1{font-size:48px;letter-spacing:-1.8px;line-height:1.12;margin:12px 0 18px;max-width:700px}h2{font-size:25px;letter-spacing:-.6px}h3{font-size:19px;margin:0 0 8px}p{line-height:1.6;color:#707070}.eyebrow{font-size:12px;letter-spacing:2px;color:#3a51f9;font-weight:bold}.primary{background:#3a51f9;color:white;border-color:#3a51f9}.notice{font-size:12px;color:#707070;line-height:1.5}
+@media(max-width:760px){h1{font-size:36px}}
+
+.home-blue{background:#3a51f9;color:white;padding-top:22px}.home-nav{max-width:1020px;margin:auto;background:#3344c4;border-radius:10px;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.home-nav img{width:100px;height:40px;object-fit:contain}.home-nav div{display:flex;gap:30px}.home-nav a{color:white;text-decoration:none;font-size:14px}.amber{background:#e7a141;color:#292929;border-color:#e7a141;border-radius:5px}.home-hero{min-height:700px;padding:65px 20px 250px;text-align:center;background:#3a51f9}.home-hero h1{font-family:Mont,Aktiv,sans-serif;font-size:55px;max-width:850px;margin:0 auto 22px;letter-spacing:-1.5px;color:white}.home-hero p{color:#eaeaea;font-size:18px}.home-benefits{display:flex;justify-content:center;gap:28px;font-size:13px;margin:25px 0}.home-actions{display:flex;justify-content:center;gap:16px;margin-top:30px}.outline{color:white;text-decoration:none;border:1px solid white;padding:13px 22px;border-radius:5px}.home-how{position:relative;max-width:1100px;margin:-70px auto 0;background:#061849;border-radius:18px;color:white;text-align:center;padding:55px 50px}.home-how h2,.home-section h2,.home-trip h2,.home-end h2{font-family:Mont,Aktiv,sans-serif;font-size:42px;line-height:1.2;margin:12px 0 20px}.home-how p{color:#bdbdbd}.home-two{display:grid;grid-template-columns:1fr 1fr;gap:90px;max-width:800px;margin:38px auto 10px}.number{display:grid;place-items:center;background:#3a51f9;border-radius:50%;width:70px;height:70px;margin:0 auto 25px;font-size:22px}.home-section{max-width:1000px;margin:auto;padding:90px 25px;text-align:center}.home-prices{display:grid;grid-template-columns:1fr 1fr;gap:26px;text-align:left;max-width:780px;margin:35px auto 20px}.home-prices article{padding:30px;border:1px solid #eaeaea;border-radius:12px}.home-prices article.featured{border:3px solid #3a51f9}.home-prices article>span{font-size:11px;letter-spacing:1px;color:#707070}.home-prices h3{font-size:32px;margin:20px 0}.home-prices small{font-size:12px;font-weight:400}.home-prices ul{padding:20px 0 20px 18px;border-top:1px solid #eaeaea;font-size:14px;line-height:2}.home-prices button{width:100%}.home-trip{background:#fef6eb;padding:75px max(30px,calc((100vw - 1000px)/2));display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.home-itinerary{background:white;border-radius:15px;padding:36px}.home-itinerary>span,.home-itinerary small{font-size:11px;color:#707070}.home-itinerary p{padding:12px 0;border-bottom:1px solid #eaeaea}.home-itinerary .explore{color:#3a51f9;font-size:23px;font-weight:bold}.home-faq{text-align:left;max-width:800px}.home-faq details{border-bottom:1px solid #eaeaea;padding:22px 0}.home-faq summary{cursor:pointer}.home-end{background:#3a51f9;color:white;text-align:center;padding:60px 20px}.home-voice{position:fixed;bottom:25px;right:25px;background:white;color:#3a51f9;box-shadow:0 4px 30px #06184920;z-index:2}@media(max-width:760px){.home-nav{margin:0 15px;padding:10px}.home-nav div{gap:12px}.home-nav a{font-size:11px}.home-nav img{width:75px}.home-nav button{font-size:12px;padding:10px}.home-hero{min-height:650px;background-image:none;padding:55px 20px 200px}.home-hero h1{font-size:35px}.home-hero p{font-size:15px}.home-benefits{gap:12px;font-size:11px;flex-wrap:wrap}.home-how{margin:-40px 15px 0;padding:35px 22px}.home-two{gap:25px}.home-how h2,.home-section h2,.home-trip h2,.home-end h2{font-size:31px}.home-two p{font-size:13px}.home-prices,.home-trip{grid-template-columns:1fr}.home-section{padding:55px 22px}.home-trip{padding:45px 25px;gap:25px}}
+
+.auth-notice{position:fixed;bottom:25px;left:25px;max-width:400px;background:#061849;color:white;padding:20px;border-radius:12px;z-index:6}.home-nav [data-auth]{background:transparent;color:white;border-color:#ffffff60}
+
+.account-chip{color:#3a51f9;background:#f0f2ff;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.home-nav .account-chip{color:white;background:#ffffff15;border-color:#ffffff40}
+.account-dialog{width:540px;max-width:92vw;max-height:80dvh;overflow:auto;border:1px solid #eaeaea;border-radius:16px;padding:24px;color:#292929}
+.account-dialog::backdrop{background:#06184966}
+.account-dialog h2{margin:0}
+.account-dialog article{padding:14px 0;border-bottom:1px solid #eaeaea}
+.account-dialog p{font-size:13px}
+@media(max-width:480px){.account-chip{max-width:95px;font-size:11px;padding:9px}.home-nav{flex-wrap:wrap}}
+
+/* Luggage Mate identity and luggage-only homepage photography. */
+.luggage-wordmark{display:inline-flex;align-items:center;gap:9px;font-family:Mont,Aktiv,sans-serif;font-size:22px;font-weight:700;letter-spacing:-.8px;white-space:nowrap}
+.luggage-wordmark svg{width:28px;height:33px;flex-shrink:0;color:#e7a141}
+.home-nav .luggage-wordmark>span{font-size:22px}
+.home-hero{min-height:0;padding:55px 20px 95px;overflow:hidden}
+.luggage-gallery{max-width:1200px;aspect-ratio:3/1;margin:38px auto 0;border-radius:20px;background:url('/assets/luggage-businesses.png') center/cover no-repeat}
+@media(max-width:760px){
+ .home-nav{flex-wrap:wrap;gap:12px}
+ .home-nav .luggage-wordmark>span,.luggage-wordmark{font-size:18px}
+ .luggage-wordmark svg{width:23px;height:29px}
+ .home-hero{min-height:0;padding:38px 18px 65px}
+ .luggage-gallery{aspect-ratio:3/1;margin-top:28px;border-radius:12px}
+}
+
+.luggage-wordmark>span{word-spacing:.18em;letter-spacing:-.3px}
+
+#assistant{position:fixed;right:20px;top:95px;width:360px;max-width:calc(100% - 40px);padding:25px;background:#fff;border:1px solid #eaeaea;box-shadow:0 15px 80px #06184926;border-radius:16px;z-index:3}.aside-head{display:flex;align-items:center;justify-content:space-between}.aside-head button{border:0;font-size:24px}aside small{font-size:11px;color:#707070}.bubble{background:#f6f7ff;border-radius:12px;padding:20px}
+
+footer{font-size:11px;color:#707070;padding:25px 6%;border-top:1px solid #eaeaea}

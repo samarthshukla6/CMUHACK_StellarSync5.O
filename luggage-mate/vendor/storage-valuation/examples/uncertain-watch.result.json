@@ -1,0 +1,60 @@
+{
+  "status": "provisional",
+  "currency": "USD",
+  "imagesAnalyzed": 1,
+  "items": [
+    {
+      "name": "wristwatch",
+      "category": "watch",
+      "brand": null,
+      "model": null,
+      "quantity": 1,
+      "condition": "good",
+      "confidence": 0.3,
+      "replacementValue": {
+        "low": 100,
+        "expected": 800,
+        "high": 5000
+      },
+      "valuationBasis": "category_estimate",
+      "visibleEvidence": [
+        "metal wristwatch visible",
+        "brand markings are not readable"
+      ],
+      "id": "item_001",
+      "priceSource": "model_estimate",
+      "needsReview": true,
+      "reviewReasons": [
+        "low_identification_confidence",
+        "broad_valuation_range",
+        "verification_sensitive_category",
+        "model_suggested_review",
+        "Exact identity could materially affect value."
+      ]
+    }
+  ],
+  "totals": {
+    "low": 100,
+    "expected": 800,
+    "high": 5000,
+    "recommendedInsuredValue": 800
+  },
+  "premium": {
+    "type": "demo_only",
+    "insuredValue": 800,
+    "baseMonthlyRate": 0.003,
+    "riskMultiplier": 1,
+    "minimumMonthlyPremium": 2.99,
+    "monthlyPremium": 2.99
+  },
+  "warnings": [
+    "valuation_uses_model_estimates_not_live_prices",
+    "some_items_require_additional_verification",
+    "low_confidence_items_present"
+  ],
+  "metadata": {
+    "provider": "mock",
+    "model": "uncertain-watch",
+    "analyzedAt": "2026-09-12T03:02:15.079Z"
+  }
+}

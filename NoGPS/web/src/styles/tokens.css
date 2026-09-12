@@ -1,0 +1,94 @@
+:root {
+  /* ---- light surfaces (Landing / Dashboard chrome) ---- */
+  --bg-page: #f8f7f5;
+  --bg-page-2: #f2f1ee;
+  --bg-raised: #ffffff;
+  --glass: rgba(255, 255, 255, 0.62);
+  --glass-strong: rgba(255, 255, 255, 0.8);
+  --glass-edge: rgba(15, 23, 42, 0.08);
+  --glass-edge-strong: rgba(15, 23, 42, 0.14);
+  --ink: #14161c;
+  --ink-dim: #5b6472;
+  --ink-faint: #939aa8;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04), 0 1px 1px rgba(15, 23, 42, 0.03);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.07), 0 2px 6px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 24px 60px rgba(15, 23, 42, 0.12), 0 4px 14px rgba(15, 23, 42, 0.06);
+
+  /* ---- dark surfaces (Tracker HUD on camera, scope canvases) ---- */
+  --dark-bg-0: #05060a;
+  --dark-bg-1: #090b12;
+  --dark-bg-2: #0e111b;
+  --dark-glass: rgba(8, 10, 16, 0.6);
+  --dark-glass-strong: rgba(10, 12, 20, 0.8);
+  --dark-glass-edge: rgba(255, 255, 255, 0.1);
+  --dark-glass-edge-2: rgba(120, 170, 255, 0.2);
+  --dark-ink: #f3f6fb;
+  --dark-ink-dim: #9aa3b8;
+  --dark-ink-faint: #66708a;
+  --dark-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+
+  /* ---- semantic accents (shared hues, per-surface variants) ---- */
+  --accent: #3b6fe0;
+  --accent-soft: rgba(59, 111, 224, 0.12);
+  --accent-glow: #5aa7ff;
+  --cyan: #0891b2;
+  --cyan-glow: #6ce7ff;
+  --live: #16a34a;
+  --live-glow: #3ef08a;
+  --live-dim: rgba(22, 163, 74, 0.12);
+  --stop: #e0304a;
+  --stop-glow: #ff4460;
+  --stop-dim: rgba(224, 48, 74, 0.12);
+  --warn: #b45309;
+  --warn-glow: #ffc14a;
+  --hazard: #c2760a;
+  --hazard-glow: #ffb020;
+  --casualty: #d6365a;
+  --casualty-glow: #ff5b7a;
+  --blocked: #c2560a;
+  --blocked-glow: #ff7a4d;
+  --violet: #7c5cd6;
+  --violet-glow: #c084fc;
+  --path-a: #2f7de0;
+  --path-b: #1fae7a;
+  --path-sim: #7c5cd6;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-pill: 999px;
+
+  --font-ui: "Inter", -apple-system, "SF Pro Text", "Segoe UI", sans-serif;
+  --font-display: "Inter", -apple-system, "SF Pro Display", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: var(--bg-page);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  letter-spacing: -0.005em;
+  font-variant-numeric: tabular-nums;
+}
+
+button, input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

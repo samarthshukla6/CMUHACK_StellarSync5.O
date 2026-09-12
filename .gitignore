@@ -1,0 +1,30 @@
+.DS_Store
+.claude/
+.git-dashboard-backup/
+
+# dependencies and build output
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# secrets
+.env
+.env.*
+!.env.example
+
+# local / private
+*.pem
+certs/
+server/data/
+.vercel
+*.tsbuildinfo
+*.log
+.cache/

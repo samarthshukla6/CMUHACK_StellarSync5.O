@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "name": "PlayStation 5",
+      "category": "electronics",
+      "brand": "Sony",
+      "model": "PlayStation 5 Slim",
+      "quantity": 1,
+      "condition": "good",
+      "confidence": 0.94,
+      "replacementValue": {
+        "low": 380,
+        "expected": 450,
+        "high": 500
+      },
+      "valuationBasis": "probable_model",
+      "visibleEvidence": [
+        "white PS5-style side panels visible"
+      ],
+      "suggestedNeedsReview": false,
+      "suggestedReviewReason": null
+    },
+    {
+      "name": "Sony over-ear headphones, exact model unknown",
+      "category": "electronics",
+      "brand": "Sony",
+      "model": null,
+      "quantity": 1,
+      "condition": "good",
+      "confidence": 0.75,
+      "replacementValue": {
+        "low": 150,
+        "expected": 220,
+        "high": 300
+      },
+      "valuationBasis": "brand_family",
+      "visibleEvidence": [
+        "SONY logo visible"
+      ],
+      "suggestedNeedsReview": false,
+      "suggestedReviewReason": null
+    },
+    {
+      "name": "game controller",
+      "category": "electronics",
+      "brand": null,
+      "model": null,
+      "quantity": 1,
+      "condition": "good",
+      "confidence": 0.82,
+      "replacementValue": {
+        "low": 40,
+        "expected": 60,
+        "high": 75
+      },
+      "valuationBasis": "category_estimate",
+      "visibleEvidence": [
+        "Object visible in mock scenario"
+      ],
+      "suggestedNeedsReview": false,
+      "suggestedReviewReason": null
+    },
+    {
+      "name": "assorted cables",
+      "category": "accessories",
+      "brand": null,
+      "model": null,
+      "quantity": 1,
+      "condition": "good",
+      "confidence": 0.82,
+      "replacementValue": {
+        "low": 10,
+        "expected": 20,
+        "high": 35
+      },
+      "valuationBasis": "category_estimate",
+      "visibleEvidence": [
+        "Object visible in mock scenario"
+      ],
+      "suggestedNeedsReview": false,
+      "suggestedReviewReason": null
+    }
+  ]
+}

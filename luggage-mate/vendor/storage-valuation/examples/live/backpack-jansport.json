@@ -1,0 +1,60 @@
+{
+  "scenario": "backpack-jansport",
+  "elapsedMs": 4401,
+  "result": {
+    "status": "auto_quoted",
+    "currency": "USD",
+    "imagesAnalyzed": 1,
+    "items": [
+      {
+        "name": "JanSport Big Student Backpack",
+        "category": "Bags & Luggage",
+        "brand": "JanSport",
+        "model": "Big Student",
+        "quantity": 1,
+        "condition": "good",
+        "confidence": 0.9,
+        "replacementValue": {
+          "low": 35,
+          "expected": 50,
+          "high": 60
+        },
+        "valuationBasis": "probable_model",
+        "visibleEvidence": [
+          "JanSport embroidered/woven label on front",
+          "Two large main zippered compartments",
+          "Front utility pocket and stash pocket configuration characteristic of Big Student model",
+          "Side mesh water bottle pocket visible",
+          "Compression straps on sides",
+          "Blue fabric shows light wear with no major tears"
+        ],
+        "id": "item_001",
+        "priceSource": "model_estimate",
+        "needsReview": false,
+        "reviewReasons": []
+      }
+    ],
+    "totals": {
+      "low": 35,
+      "expected": 50,
+      "high": 60,
+      "recommendedInsuredValue": 50
+    },
+    "premium": {
+      "type": "demo_only",
+      "insuredValue": 50,
+      "baseMonthlyRate": 0.003,
+      "riskMultiplier": 1,
+      "minimumMonthlyPremium": 2.99,
+      "monthlyPremium": 2.99
+    },
+    "warnings": [
+      "valuation_uses_model_estimates_not_live_prices"
+    ],
+    "metadata": {
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "analyzedAt": "2026-09-12T02:04:37.773Z"
+    }
+  }
+}

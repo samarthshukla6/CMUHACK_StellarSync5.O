@@ -1,0 +1,12 @@
+# AI model caches - exclude from Vercel deployments
+.cache/
+*.cache
+**/.cache/
+**/models/
+**/model-cache/
+~/.cache/huggingface/
+
+# Node modules are already excluded, but ensure large packages aren't traced
+node_modules/@built-in-ai/**/models/
+node_modules/@huggingface/**/models/
+node_modules/@mlc-ai/**/models/

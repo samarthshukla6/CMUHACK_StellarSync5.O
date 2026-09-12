@@ -1,0 +1,62 @@
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  max-width: 400px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: slideIn 0.3s ease-out;
+  backdrop-filter: blur(10px);
+}
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+.notification.info {
+  background: rgba(59, 130, 246, 0.95);
+  color: white;
+  border: 1px solid rgba(96, 165, 250, 0.3);
+}
+.notification.warning {
+  background: rgba(245, 158, 11, 0.95);
+  color: white;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+.notification.error {
+  background: rgba(239, 68, 68, 0.95);
+  color: white;
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.message {
+  flex: 1;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.closeButton {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+}
+.closeButton:hover { opacity: 1; }
+.closeButton:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+  border-radius: 4px;
+}

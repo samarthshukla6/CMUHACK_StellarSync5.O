@@ -1,0 +1,111 @@
+{
+  "version": "traveler-draft-v1",
+  "status": "awaiting_confirmation",
+  "expiresAt": "2026-09-12T03:32:14.339Z",
+  "currency": "USD",
+  "session": {
+    "startsAt": "2026-09-12T04:02:14.339Z",
+    "endsAt": "2026-09-12T10:02:14.339Z",
+    "storage": {
+      "type": "unattended",
+      "locationName": "Demo luggage desk",
+      "address": "123 Example Street, New York, NY",
+      "countryCode": "US",
+      "custodianName": "Demo operator"
+    }
+  },
+  "coverageScope": "bag_and_contents",
+  "photoCoverage": "bag_exterior_only",
+  "imagesAnalyzed": 1,
+  "items": [
+    {
+      "name": "Fjällräven Kånken Backpack",
+      "category": "Bags & Backpacks",
+      "brand": "Fjällräven",
+      "model": "Kånken",
+      "quantity": 1,
+      "condition": "good",
+      "confidence": 0.95,
+      "replacementValue": {
+        "low": 70,
+        "expected": 90,
+        "high": 100
+      },
+      "valuationBasis": "exact_model",
+      "visibleEvidence": [
+        "Fjällräven Kånken circular logo patch clearly visible on center pocket",
+        "Classic Kånken boxy design with top carrying handles and webbing shoulder straps",
+        "Black fabric with front zip pouch and dual zippers"
+      ],
+      "suggestedNeedsReview": false,
+      "suggestedReviewReason": null,
+      "id": "item_001"
+    },
+    {
+      "name": "Red Plaid Long-Sleeve Shirt",
+      "category": "Clothing",
+      "brand": null,
+      "model": null,
+      "quantity": 1,
+      "condition": "good",
+      "confidence": 0.85,
+      "replacementValue": {
+        "low": 20,
+        "expected": 40,
+        "high": 70
+      },
+      "valuationBasis": "category_estimate",
+      "visibleEvidence": [
+        "Red, white, and black/navy plaid pattern",
+        "Woven fabric button-down long sleeve style",
+        "Brand label not visible"
+      ],
+      "suggestedNeedsReview": false,
+      "suggestedReviewReason": null,
+      "id": "item_002"
+    },
+    {
+      "name": "Denim Jeans",
+      "category": "Clothing",
+      "brand": null,
+      "model": null,
+      "quantity": 1,
+      "condition": "good",
+      "confidence": 0.8,
+      "replacementValue": {
+        "low": 25,
+        "expected": 50,
+        "high": 90
+      },
+      "valuationBasis": "category_estimate",
+      "visibleEvidence": [
+        "Blue denim jeans visible at waistband/hip area",
+        "No brand patches or labels clearly visible"
+      ],
+      "suggestedNeedsReview": false,
+      "suggestedReviewReason": null,
+      "id": "item_003"
+    }
+  ],
+  "estimatedValue": {
+    "low": 115,
+    "expected": 180,
+    "high": 260
+  },
+  "warnings": [
+    "valuation_uses_model_estimates_not_live_prices",
+    "hidden_contents_not_inferred",
+    "draft_is_not_coverage",
+    "contents_not_visible"
+  ],
+  "requiredActions": [
+    "include_or_exclude_each_detected_item",
+    "declare_unseen_contents_or_exclude_them",
+    "confirm_inventory_and_ownership"
+  ],
+  "metadata": {
+    "provider": "mock",
+    "model": "recorded-backpack-replay",
+    "analyzedAt": "2026-09-12T03:02:14.339Z"
+  }
+}

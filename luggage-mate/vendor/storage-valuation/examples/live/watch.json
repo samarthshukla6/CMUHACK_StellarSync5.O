@@ -1,0 +1,62 @@
+{
+  "scenario": "watch",
+  "elapsedMs": 3313,
+  "result": {
+    "status": "provisional",
+    "currency": "USD",
+    "imagesAnalyzed": 1,
+    "items": [
+      {
+        "name": "Casio F-91W Digital Watch",
+        "category": "Watches",
+        "brand": "Casio",
+        "model": "F-91W",
+        "quantity": 1,
+        "condition": "like_new",
+        "confidence": 0.99,
+        "replacementValue": {
+          "low": 15,
+          "expected": 20,
+          "high": 25
+        },
+        "valuationBasis": "exact_model",
+        "visibleEvidence": [
+          "CASIO text on dial",
+          "F-91W model text on dial",
+          "Classic black resin case and strap",
+          "ALARM CHRONOGRAPH and WATER RESIST markings visible",
+          "Digital LCD display showing time and date"
+        ],
+        "id": "item_001",
+        "priceSource": "model_estimate",
+        "needsReview": true,
+        "reviewReasons": [
+          "verification_sensitive_category"
+        ]
+      }
+    ],
+    "totals": {
+      "low": 15,
+      "expected": 20,
+      "high": 25,
+      "recommendedInsuredValue": 50
+    },
+    "premium": {
+      "type": "demo_only",
+      "insuredValue": 50,
+      "baseMonthlyRate": 0.003,
+      "riskMultiplier": 1,
+      "minimumMonthlyPremium": 2.99,
+      "monthlyPremium": 2.99
+    },
+    "warnings": [
+      "valuation_uses_model_estimates_not_live_prices",
+      "some_items_require_additional_verification"
+    ],
+    "metadata": {
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "analyzedAt": "2026-09-12T01:54:10.629Z"
+    }
+  }
+}

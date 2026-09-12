@@ -1,0 +1,35 @@
+{
+  "decisions": [
+    {
+      "itemId": "item_001",
+      "include": true,
+      "kind": "bag"
+    },
+    {
+      "itemId": "item_002",
+      "include": false
+    },
+    {
+      "itemId": "item_003",
+      "include": false
+    }
+  ],
+  "manualItems": [
+    {
+      "name": "Laptop",
+      "category": "electronics",
+      "brand": null,
+      "model": null,
+      "quantity": 1,
+      "condition": "good",
+      "declaredUnitValue": 900,
+      "kind": "contents"
+    }
+  ],
+  "attestations": {
+    "inventoryConfirmed": true,
+    "belongsToTraveler": true,
+    "onlyListedItemsConsidered": true,
+    "contentsDeclaration": "all_contents_listed"
+  }
+}

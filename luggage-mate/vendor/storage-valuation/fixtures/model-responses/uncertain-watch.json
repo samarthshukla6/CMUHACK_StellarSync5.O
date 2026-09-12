@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "name": "wristwatch",
+      "category": "watch",
+      "brand": null,
+      "model": null,
+      "quantity": 1,
+      "condition": "good",
+      "confidence": 0.3,
+      "replacementValue": {
+        "low": 100,
+        "expected": 800,
+        "high": 5000
+      },
+      "valuationBasis": "category_estimate",
+      "visibleEvidence": [
+        "metal wristwatch visible",
+        "brand markings are not readable"
+      ],
+      "suggestedNeedsReview": true,
+      "suggestedReviewReason": "Exact identity could materially affect value."
+    }
+  ]
+}

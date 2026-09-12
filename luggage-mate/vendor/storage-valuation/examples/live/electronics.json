@@ -1,0 +1,83 @@
+{
+  "scenario": "electronics",
+  "elapsedMs": 25756,
+  "result": {
+    "status": "auto_quoted",
+    "currency": "USD",
+    "imagesAnalyzed": 1,
+    "items": [
+      {
+        "name": "Sony PlayStation 5 Console (Disc Edition)",
+        "category": "Electronics & Video Games",
+        "brand": "Sony",
+        "model": "PlayStation 5 (Disc Edition)",
+        "quantity": 1,
+        "condition": "good",
+        "confidence": 0.98,
+        "replacementValue": {
+          "low": 400,
+          "expected": 450,
+          "high": 500
+        },
+        "valuationBasis": "exact_model",
+        "visibleEvidence": [
+          "Curved white side plates with glossy black center body",
+          "Front Blu-ray disc slot visible on the right lower profile",
+          "USB Type-A and USB Type-C ports visible on front center",
+          "Mounted vertically on official black stand",
+          "No horizontal slit panel division indicating original release rather than Slim"
+        ],
+        "id": "item_001",
+        "priceSource": "model_estimate",
+        "needsReview": false,
+        "reviewReasons": []
+      },
+      {
+        "name": "Sony DualSense Wireless Controller",
+        "category": "Video Game Accessories",
+        "brand": "Sony",
+        "model": "DualSense",
+        "quantity": 1,
+        "condition": "good",
+        "confidence": 0.98,
+        "replacementValue": {
+          "low": 50,
+          "expected": 70,
+          "high": 75
+        },
+        "valuationBasis": "exact_model",
+        "visibleEvidence": [
+          "PlayStation shape and d-pad / action button layout",
+          "Two-tone white and black DualSense controller design",
+          "Analog sticks and central touchpad visible"
+        ],
+        "id": "item_002",
+        "priceSource": "model_estimate",
+        "needsReview": false,
+        "reviewReasons": []
+      }
+    ],
+    "totals": {
+      "low": 450,
+      "expected": 520,
+      "high": 575,
+      "recommendedInsuredValue": 550
+    },
+    "premium": {
+      "type": "demo_only",
+      "insuredValue": 550,
+      "baseMonthlyRate": 0.003,
+      "riskMultiplier": 1,
+      "minimumMonthlyPremium": 2.99,
+      "monthlyPremium": 2.99
+    },
+    "warnings": [
+      "valuation_uses_model_estimates_not_live_prices"
+    ],
+    "metadata": {
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "analyzedAt": "2026-09-12T01:54:07.313Z"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+PRIVATE CONFIGURATION — contains live credentials.
+Extract .env and config.local.js into the Luggage Mate project folder beside package.json. Do not commit these files or this ZIP.
+Use Node 24, run npm ci, then npm start. Open http://127.0.0.1:8094/.
+Atlas: add your current IP to the project network access list. Your Atlas dashboard invitation alone does not provide database network access. This .env uses the existing application database credentials.
+Share through a private secure channel, not a public link.

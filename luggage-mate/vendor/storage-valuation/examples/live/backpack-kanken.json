@@ -1,0 +1,104 @@
+{
+  "scenario": "backpack-kanken",
+  "elapsedMs": 6003,
+  "result": {
+    "status": "auto_quoted",
+    "currency": "USD",
+    "imagesAnalyzed": 1,
+    "items": [
+      {
+        "name": "Fjällräven Kånken Backpack",
+        "category": "Bags & Backpacks",
+        "brand": "Fjällräven",
+        "model": "Kånken",
+        "quantity": 1,
+        "condition": "good",
+        "confidence": 0.95,
+        "replacementValue": {
+          "low": 70,
+          "expected": 90,
+          "high": 100
+        },
+        "valuationBasis": "exact_model",
+        "visibleEvidence": [
+          "Fjällräven Kånken circular logo patch clearly visible on center pocket",
+          "Classic Kånken boxy design with top carrying handles and webbing shoulder straps",
+          "Black fabric with front zip pouch and dual zippers"
+        ],
+        "id": "item_001",
+        "priceSource": "model_estimate",
+        "needsReview": false,
+        "reviewReasons": []
+      },
+      {
+        "name": "Red Plaid Long-Sleeve Shirt",
+        "category": "Clothing",
+        "brand": null,
+        "model": null,
+        "quantity": 1,
+        "condition": "good",
+        "confidence": 0.85,
+        "replacementValue": {
+          "low": 20,
+          "expected": 40,
+          "high": 70
+        },
+        "valuationBasis": "category_estimate",
+        "visibleEvidence": [
+          "Red, white, and black/navy plaid pattern",
+          "Woven fabric button-down long sleeve style",
+          "Brand label not visible"
+        ],
+        "id": "item_002",
+        "priceSource": "model_estimate",
+        "needsReview": false,
+        "reviewReasons": []
+      },
+      {
+        "name": "Denim Jeans",
+        "category": "Clothing",
+        "brand": null,
+        "model": null,
+        "quantity": 1,
+        "condition": "good",
+        "confidence": 0.8,
+        "replacementValue": {
+          "low": 25,
+          "expected": 50,
+          "high": 90
+        },
+        "valuationBasis": "category_estimate",
+        "visibleEvidence": [
+          "Blue denim jeans visible at waistband/hip area",
+          "No brand patches or labels clearly visible"
+        ],
+        "id": "item_003",
+        "priceSource": "model_estimate",
+        "needsReview": false,
+        "reviewReasons": []
+      }
+    ],
+    "totals": {
+      "low": 115,
+      "expected": 180,
+      "high": 260,
+      "recommendedInsuredValue": 200
+    },
+    "premium": {
+      "type": "demo_only",
+      "insuredValue": 200,
+      "baseMonthlyRate": 0.003,
+      "riskMultiplier": 1,
+      "minimumMonthlyPremium": 2.99,
+      "monthlyPremium": 2.99
+    },
+    "warnings": [
+      "valuation_uses_model_estimates_not_live_prices"
+    ],
+    "metadata": {
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "analyzedAt": "2026-09-12T02:04:43.779Z"
+    }
+  }
+}

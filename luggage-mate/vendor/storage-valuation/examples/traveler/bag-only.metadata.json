@@ -1,0 +1,15 @@
+{
+  "session": {
+    "startsAt": "2026-09-12T04:02:14.339Z",
+    "endsAt": "2026-09-12T10:02:14.339Z",
+    "storage": {
+      "type": "staffed_storage",
+      "locationName": "Demo luggage desk",
+      "address": "123 Example Street, New York, NY",
+      "countryCode": "US",
+      "custodianName": "Demo operator"
+    }
+  },
+  "coverageScope": "bag_only",
+  "photoCoverage": "bag_exterior_only"
+}

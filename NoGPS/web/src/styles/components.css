@@ -1,0 +1,207 @@
+/* Shared light-mode primitives — imported by landing.css and dashboard.css only. */
+
+.glass-panel {
+  background: var(--glass);
+  border: 1px solid var(--glass-edge);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  box-shadow: var(--shadow-md);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 18px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--glass-edge);
+  background: var(--glass-strong);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-weight: 560;
+  font-size: 14px;
+  letter-spacing: -0.005em;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--glass-edge-strong);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn svg { flex: none; }
+
+.btn-primary {
+  border-color: transparent;
+  background: linear-gradient(180deg, #4c7bef, var(--accent));
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(59, 111, 224, 0.28);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 26px rgba(59, 111, 224, 0.36);
+}
+
+.btn-ghost {
+  background: transparent;
+  border-color: transparent;
+  color: var(--ink-dim);
+}
+
+.btn-ghost:hover {
+  background: rgba(15, 23, 42, 0.045);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: var(--radius-pill);
+  background: var(--glass);
+  border: 1px solid var(--glass-edge);
+  font-size: 12.5px;
+  font-weight: 560;
+  color: var(--ink-dim);
+  white-space: nowrap;
+}
+
+.chip b, .chip strong {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.chip .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--live);
+  box-shadow: 0 0 0 3px var(--live-dim);
+}
+
+.chip-live {
+  color: var(--live);
+  border-color: rgba(22, 163, 74, 0.22);
+  background: var(--live-dim);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 9px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.badge-casualty { color: var(--casualty); background: rgba(214, 54, 90, 0.1); }
+.badge-hazard { color: var(--hazard); background: rgba(194, 118, 10, 0.1); }
+.badge-blocked { color: var(--blocked); background: rgba(194, 86, 10, 0.1); }
+.badge-sim { color: var(--violet); background: rgba(124, 92, 214, 0.1); }
+
+.metric-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border-radius: var(--radius-md);
+  background: var(--glass);
+  border: 1px solid var(--glass-edge);
+  min-width: 0;
+}
+
+.metric-tile .metric-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.metric-tile .metric-label svg { flex: none; }
+
+.metric-tile .metric-value {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.metric-tile .metric-value small {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-faint);
+  margin-left: 2px;
+}
+
+.activity-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 9px 4px;
+  border-bottom: 1px solid var(--glass-edge);
+  font-size: 12.5px;
+  animation: activity-in 0.28s cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+
+.activity-row:last-child { border-bottom: none; }
+
+.activity-row .activity-dot {
+  flex: none;
+  width: 7px;
+  height: 7px;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
+.activity-row .activity-text {
+  color: var(--ink);
+  font-weight: 540;
+}
+
+.activity-row .activity-time {
+  margin-left: auto;
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--ink-faint);
+  padding-top: 1px;
+}
+
+@keyframes activity-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: none; }
+}
+
+.empty-state {
+  color: var(--ink-faint);
+  font-size: 12.5px;
+  padding: 18px 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

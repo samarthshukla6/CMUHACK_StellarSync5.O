@@ -1,0 +1,73 @@
+{
+  "status": "auto_quoted",
+  "currency": "USD",
+  "imagesAnalyzed": 1,
+  "items": [
+    {
+      "name": "assorted clothing",
+      "category": "clothing",
+      "brand": null,
+      "model": null,
+      "quantity": 1,
+      "condition": "good",
+      "confidence": 0.82,
+      "replacementValue": {
+        "low": 120,
+        "expected": 200,
+        "high": 300
+      },
+      "valuationBasis": "category_estimate",
+      "visibleEvidence": [
+        "several folded clothing items visible"
+      ],
+      "id": "item_001",
+      "priceSource": "model_estimate",
+      "needsReview": false,
+      "reviewReasons": []
+    },
+    {
+      "name": "Nike sneakers",
+      "category": "footwear",
+      "brand": "Nike",
+      "model": null,
+      "quantity": 1,
+      "condition": "good",
+      "confidence": 0.78,
+      "replacementValue": {
+        "low": 70,
+        "expected": 110,
+        "high": 160
+      },
+      "valuationBasis": "brand_family",
+      "visibleEvidence": [
+        "Nike swoosh visible"
+      ],
+      "id": "item_002",
+      "priceSource": "model_estimate",
+      "needsReview": false,
+      "reviewReasons": []
+    }
+  ],
+  "totals": {
+    "low": 190,
+    "expected": 310,
+    "high": 460,
+    "recommendedInsuredValue": 350
+  },
+  "premium": {
+    "type": "demo_only",
+    "insuredValue": 350,
+    "baseMonthlyRate": 0.003,
+    "riskMultiplier": 1,
+    "minimumMonthlyPremium": 2.99,
+    "monthlyPremium": 2.99
+  },
+  "warnings": [
+    "valuation_uses_model_estimates_not_live_prices"
+  ],
+  "metadata": {
+    "provider": "mock",
+    "model": "ordinary-box",
+    "analyzedAt": "2026-09-12T03:02:15.073Z"
+  }
+}

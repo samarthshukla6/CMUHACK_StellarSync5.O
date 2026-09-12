@@ -1,0 +1,203 @@
+{
+  "test": "traveler-backpack-with-wearer",
+  "source": "../live/photos/kanken.jpg",
+  "draft": {
+    "version": "traveler-draft-v1",
+    "status": "awaiting_confirmation",
+    "expiresAt": "2026-09-12T03:29:11.062Z",
+    "currency": "USD",
+    "session": {
+      "startsAt": "2026-09-12T03:59:08.141Z",
+      "endsAt": "2026-09-12T09:59:08.141Z",
+      "storage": {
+        "type": "staffed_storage",
+        "locationName": "Demo desk",
+        "address": "123 Example Street, New York, NY",
+        "countryCode": "US",
+        "custodianName": "Demo operator"
+      }
+    },
+    "coverageScope": "bag_only",
+    "photoCoverage": "bag_exterior_only",
+    "imagesAnalyzed": 1,
+    "items": [
+      {
+        "name": "Fjällräven Kånken Backpack",
+        "category": "Bags & Luggage",
+        "brand": "Fjällräven",
+        "model": "Kånken",
+        "quantity": 1,
+        "condition": "good",
+        "confidence": 0.95,
+        "replacementValue": {
+          "low": 70,
+          "expected": 90,
+          "high": 115
+        },
+        "valuationBasis": "exact_model",
+        "visibleEvidence": [
+          "Fjällräven Kånken circular logo patch with arctic fox graphic visible",
+          "Classic rectangular Kånken design with top tote handles and front zipper pocket",
+          "Black fabric showing minor natural creasing from use"
+        ],
+        "suggestedNeedsReview": false,
+        "suggestedReviewReason": null,
+        "id": "item_001"
+      }
+    ],
+    "estimatedValue": {
+      "low": 70,
+      "expected": 90,
+      "high": 115
+    },
+    "warnings": [
+      "valuation_uses_model_estimates_not_live_prices",
+      "hidden_contents_not_inferred",
+      "draft_is_not_coverage",
+      "contents_not_visible"
+    ],
+    "requiredActions": [
+      "include_or_exclude_each_detected_item",
+      "declare_unseen_contents_or_exclude_them",
+      "confirm_inventory_and_ownership"
+    ],
+    "metadata": {
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "analyzedAt": "2026-09-12T02:59:11.062Z"
+    }
+  },
+  "confirmation": {
+    "decisions": [
+      {
+        "itemId": "item_001",
+        "include": true,
+        "kind": "bag"
+      }
+    ],
+    "manualItems": [],
+    "attestations": {
+      "inventoryConfirmed": true,
+      "belongsToTraveler": true,
+      "onlyListedItemsConsidered": true,
+      "contentsDeclaration": "unlisted_contents_excluded"
+    }
+  },
+  "quote": {
+    "version": "traveler-quote-v1",
+    "status": "demo_quote_ready",
+    "policyIssued": false,
+    "currency": "USD",
+    "session": {
+      "startsAt": "2026-09-12T03:59:08.141Z",
+      "endsAt": "2026-09-12T09:59:08.141Z",
+      "storage": {
+        "type": "staffed_storage",
+        "locationName": "Demo desk",
+        "address": "123 Example Street, New York, NY",
+        "countryCode": "US",
+        "custodianName": "Demo operator"
+      }
+    },
+    "generatedAt": "2026-09-12T02:59:11.067Z",
+    "expiresAt": "2026-09-12T03:14:11.067Z",
+    "items": [
+      {
+        "id": "confirmed_001",
+        "sourceItemId": "item_001",
+        "source": "photo",
+        "kind": "bag",
+        "name": "Fjällräven Kånken Backpack",
+        "category": "Bags & Luggage",
+        "brand": "Fjällräven",
+        "model": "Kånken",
+        "quantity": 1,
+        "condition": "good",
+        "identificationConfidence": 0.95,
+        "replacementValue": {
+          "low": 70,
+          "expected": 90,
+          "high": 115
+        },
+        "valuationBasis": "exact_model",
+        "priceSource": "model_estimate",
+        "visibleEvidence": [
+          "Fjällräven Kånken circular logo patch with arctic fox graphic visible",
+          "Classic rectangular Kånken design with top tote handles and front zipper pocket",
+          "Black fabric showing minor natural creasing from use"
+        ],
+        "reviewReasons": [],
+        "eligibility": "eligible",
+        "exclusionReasons": [],
+        "expectedLineValue": 90,
+        "eligibleLineValue": 90
+      }
+    ],
+    "valuation": {
+      "low": 70,
+      "expected": 90,
+      "high": 115,
+      "eligibleExpectedValue": 90,
+      "excludedExpectedValue": 0,
+      "pendingReviewExpectedValue": 0
+    },
+    "coverage": {
+      "type": "demo_proposal",
+      "scope": "listed_items_only",
+      "limit": 100,
+      "recommendedLimit": 100,
+      "deductible": 0,
+      "maximumSessionLimit": 5000,
+      "perPhysicalItemLimit": 1000,
+      "perItemLimitReduction": 0,
+      "aggregateLimitReduction": 0,
+      "uncoveredEligibleValue": 0,
+      "prototypeEvents": [
+        "theft_during_declared_storage",
+        "accidental_damage_during_declared_storage"
+      ],
+      "exclusions": [
+        "unlisted_items_and_hidden_undeclared_contents",
+        "cash_gift_cards_and_travel_documents",
+        "food_and_perishables",
+        "unattended_storage",
+        "loss_outside_selected_session",
+        "unresolved_items_pending_verification"
+      ]
+    },
+    "premium": {
+      "type": "demo_only",
+      "ratingVersion": "traveler-demo-v1",
+      "currency": "USD",
+      "durationMinutes": 360,
+      "durationHours": 6,
+      "durationBand": "up_to_6_hours",
+      "additionalDays": 0,
+      "ratePer100": 0.2,
+      "storageMultiplier": 1,
+      "minimumSessionPremium": 1.49,
+      "totalPremium": 1.49
+    },
+    "blockingReasons": [],
+    "warnings": [
+      "demo_only_not_an_insurance_policy",
+      "valuation_uses_model_estimates_not_live_prices",
+      "only_listed_eligible_items_considered",
+      "replacement_estimate_is_not_a_claim_payment",
+      "storage_details_are_user_declared",
+      "unlisted_contents_excluded"
+    ],
+    "nextActions": [
+      {
+        "code": "review_demo_terms",
+        "message": "Review the session, listed items, limits, deductible and exclusions. A licensed insurance partner must supply and issue any real coverage."
+      }
+    ]
+  },
+  "observations": {
+    "detectedItems": [
+      "Fjällräven Kånken Backpack"
+    ],
+    "wearerClothingReturned": false
+  }
+}
