@@ -101,8 +101,7 @@ Five apps. One cockpit. Each feature is a standalone codebase, wired into the da
 
 **Folder:** [`NoGPS`](./NoGPS) · **Dev:** `http://127.0.0.1:8080/dashboard.html` · HUD `https://<lan-ip>:8443/track.html`
 
-> **Demo video:**  
-> `https://youtu.be/________`
+<img width="1710" height="1107" alt="Image" src="https://github.com/user-attachments/assets/e1f9110a-cd90-4423-a511-0e6658d70c51" />
 
 ---
 
