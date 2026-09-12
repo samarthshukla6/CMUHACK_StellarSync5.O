@@ -71,8 +71,7 @@ Five apps. One cockpit. Each feature is a standalone codebase, wired into the da
 
 **Folder:** [`HealthX_Dashboard`](./HealthX_Dashboard) · **Dev:** `http://localhost:3000`
 
-> **Demo video:**  
-> `https://youtu.be/________`
+<img width="1710" height="1107" alt="Image" src="https://github.com/user-attachments/assets/2734ccf1-40c6-4249-b5c9-e3c1e11daccb" />
 
 ---
 
@@ -112,11 +111,6 @@ Five apps. One cockpit. Each feature is a standalone codebase, wired into the da
 - Fly-to any place (OpenStreetMap geocode)
 - **Gemini** scrapes the 3 most famous sights
 - Wikipedia photos, descriptions, Google Maps deep-links
-
-**Folder:** [`3d globe render travel`](./3d%20globe%20render%20travel) · **Dev:** `http://localhost:3010`
-
-> **Demo video:**  
-> `https://youtu.be/________`
 
 ---
 
